@@ -1,8 +1,9 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+DOTFILES=$HOME/.dotfiles
+ZSH=$DOTFILES/oh-my-zsh
 
 # Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
+# Look in ~/.dotfiles/oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
@@ -52,7 +53,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 eval "$(rbenv init -)"
 
 # Setup zsh-autosuggestions
-source ~/.zsh-autosuggestions/autosuggestions.zsh
+source $DOTFILES/zsh-autosuggestions/autosuggestions.zsh
 
 # Enable autosuggestions automatically
 zle-line-init() {
