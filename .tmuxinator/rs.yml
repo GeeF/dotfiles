@@ -1,0 +1,35 @@
+# ~/.tmuxinator/rs.yml
+
+name: rs
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+tmux_command: tmux -2
+
+windows:
+  - def: roscore&
+  - build: cd catkin_ws/
+  - run: cd catkin_ws/
+  - rs_log_learn:
+      layout: main-vertical
+      panes: 
+        - cd catkin_ws/src/rs_log_learn && gst
+        - cd catkin_ws/src/rs_log_learn
+  - robosherlock:
+      layout: main-vertical
+      panes:
+        - cd catkin_ws/src/robo_sherlock/iai_rs_cpp && gst
+        - cd catkin_ws/src/robo_sherlock/iai_rs_cpp
+
