@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/User/Monokai Soda (Flake8Lint).tmTheme",
+	"dictionary": "Packages/Dictionaries/English (American).dic",
+	"font_face": "Menlo",
+	"ignored_packages":
+	[
+		"SublimeClang",
+		"Vintage"
+	],
+	"theme": "Soda Dark.sublime-theme",
+	"thesaurus_api_key": "JLdGc0Y3hyDClBOkvLbs"
+}

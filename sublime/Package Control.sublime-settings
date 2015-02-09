@@ -1,0 +1,27 @@
+{
+	"auto_upgrade_last_run": null,
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"bz2"
+	],
+	"installed_packages":
+	[
+		"ChannelRepositoryTools",
+		"Dictionaries",
+		"GitGutter",
+		"LaTeXTools",
+		"LatexToolsBAK",
+		"Markdown Preview",
+		"Marked App Menu",
+		"Package Control",
+		"Python Flake8 Lint",
+		"SublimeClang",
+		"SublimeCodeIntel",
+		"Theme - Soda",
+		"Thesaurus",
+		"WordCount"
+	]
+}
