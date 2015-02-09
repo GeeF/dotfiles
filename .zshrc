@@ -53,15 +53,24 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 eval "$(rbenv init -)"
 
 # Setup zsh-autosuggestions
-source $DOTFILES/zsh-autosuggestions/autosuggestions.zsh
+#source $DOTFILES/zsh-autosuggestions/autosuggestions.zsh
 
 # Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
+#zle-line-init() {
+#    zle autosuggest-start
+#}
+#zle -N zle-line-init
 
 # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
 # zsh-autosuggestions is designed to be unobtrusive)
-bindkey '^T' autosuggest-toggle
-export AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=0'
+#bindkey '^T' autosuggest-toggle
+#export AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=0'
+
+# osx LC fuckup
+export LC_ALL="en_US.UTF-8"
+
+alias yed='java -jar /Users/Shared/yWorks/yEd/yed.jar'
+export EDITOR=vim
+
+# sploit
+export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml
