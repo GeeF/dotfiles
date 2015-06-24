@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"ChannelRepositoryTools",
+		"CMake",
 		"Dictionaries",
 		"GitGutter",
 		"LaTeXTools",
