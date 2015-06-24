@@ -1,11 +1,13 @@
 {
 	"color_scheme": "Packages/User/Monokai Soda (Flake8Lint).tmTheme",
-	"dictionary": "Packages/Dictionaries/English (American).dic",
+	"dictionary": "Packages/Dictionaries/German.dic",
 	"font_face": "Menlo",
 	"ignored_packages":
 	[
 		"SublimeClang",
-		"Vintage"
+		"Vintage",
+		"Python Flake8 Lint",
+		"SublimeCodeIntel"
 	],
 	"theme": "Soda Dark.sublime-theme",
 	"thesaurus_api_key": "JLdGc0Y3hyDClBOkvLbs"
